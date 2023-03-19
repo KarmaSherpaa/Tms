@@ -1,10 +1,5 @@
 <x-guest-layout>
-    @foreach ($users as $key => $user) 
 
-   {{$user['name']}}
-   @endforeach
-
-    {{$users}}
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
