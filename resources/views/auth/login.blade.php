@@ -45,31 +45,3 @@
         </div>
     </form>
 </x-guest-layout>
-<div class="container">
-    <div class="image">
-      <a href="#"><img src="signupimage.jpg" alt="image"></a>
-    </div>
-  
-  <div class="signup-box">
-
-    <h2>SIGN IN</h2>
-
-    <hr class="h">
-    <form>
-      <label>Username</label>
-      <input type="text" place holder="">
-
-      <label>Password</label>
-      <input type="text" place holder="">
-    </form>
-    <div class="remember">
-        <input type="checkbox" id="checkbox">
-        <label for="checkbox">Remember Me</label>
-        <div class="forgotPassword"> 
-        <a href="#" class="btn-3">Forgot Password?</a>
- </div>
-        
-    </div>
-      <a href="#" class="btn btn-4">Login</a> 
-  </div>
-</div>
