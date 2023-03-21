@@ -24,7 +24,4 @@
             </x-primary-button>
         </div>
     </form>
-</x-guest-layout>   
-
-  
-<!-- try -->
+</x-guest-layout>
