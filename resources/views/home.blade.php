@@ -1,4 +1,17 @@
 <!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Tax Management System</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+</html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -18,7 +31,7 @@
 
 </head>
 
-<body class="page-login
+<body class="home-page
 ">
     <!-- define symbol in hidden svg document -->
 <svg style="display: none" version="2.0">
@@ -329,50 +342,108 @@
     </symbol>
 
 </svg>
+    <header id="header" class="sticky-top">
+    <div class="container-fluid">
+        <div class="header-left">
+            <a href="#" class="d-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#responsivemenu">
+                <svg width="21" height="18">
+                    <use href="#menu" />
+                </svg>
+            </a>
+            <a href={{URL::to('/home')}}  class="logo">
+                <img src="{{asset('Images/logo.svg')}}" alt="logo" width="218" height="29">
+            </a>
+            <nav id="primary-nav" class="d-none d-lg-block">
+                <ul class="menu">
+                    <li class="active"><a href="index.html">Overview</a></li>
+                    <li><a href="individual-care.html">Individual Care</a></li>
+                    <li><a href="residental-care.html">Residential Care</a></li>
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#contactModal">
+                <svg width="28" height="20">
+                    <use href="#mail" />
+                </svg>
+            </a> 
+        </div>
+        <div class="header-right cta-btn d-none d-lg-block">
+            <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
+                @if (Route::has('login'))
+                    <div class="btn btn-login">
+                        @auth
+                            <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                        @else
+                            <a href="{{ route('login') }}" class="btn btn-login">Log in</a>
     
-	<div class="container">
-	<div class="row justify-content-center">
-		
-		<div class="col-md-4">
-			<a href="index.html" class="logo text-center mb-5">
-                <img src="{{asset('Images/logo.svg')}}" alt="TMS" >
-			</a>
-			<div class="login-block card">
-				<h1 class="mb-4 text-center">Login</h1>
-            <form method="POST" action="{{ route('login') }}">
-                @csrf    
-				<div class="mb-3">
-                    <x-text-input class="form-control"  id="email" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-                    <x-input-error :messages="$errors->get('email')" class="mt-2" />
-				</div>
-				<div class="mb-2 password-group">
-                    <x-text-input id="password" class="form-control" type="password" name="password" required autocomplete="current-password" placeholder="password" value="Mark"/>
-                    <x-input-error :messages="$errors->get('password')" class="mt-2" />
-					<span onclick="revelpassword()" class="icon-eye">
-						<svg width="24" height="24">
-							<use href="#icon-eye"/>
-						</svg>
-					</span>
-				</div>
-                <div class="text-end mb-2">
-                    @if (Route::has('password.request'))
-                        <a class="unlink" href="{{ route('password.request') }}">
-                            {{ __('Forgotten password') }}
-                        </a>
-                    @endif
-                </div>
-			    <div class="mb-2 d-grid">
-                    <x-primary-button  class="btn btn-primary" type="submit">{{ __('Login') }}</x-primary-button>
-                </div>    
-				<div class="mb-2">
-					<p>Don't have an account? You can <a href="#">register here</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-</form>
+                            @if (Route::has('register'))
+                                <a href="{{ route('register') }}" class="btn btn-primary-gd">Register</a>
+                            @endif
+                        @endauth
+                    </div>
+                @endif
+        </div>
+    </div>
+</header>
+<!--end header-->
+<div class="offcanvas offcanvas-start responsivenav" tabindex="-1" id="responsivemenu"
+    aria-labelledby="responsivemenuLabel">
+    <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#responsivemenu"
+            aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="cta-btn mb-3">
+            <a href="#" class="btn btn-login">
+                <svg width="20" height="20" class="log">
+                    <use href="#login" />
+                </svg>
+                Launch app</a>
+            <a href="#" class="btn btn-primary-gd">
+                <svg width="18" height="18">
+                    <use href="#tick" />
+                </svg>
+                Register</a>
+        </div>
+        <nav id="mobile-nav" class="mb-4">
+            <ul class="menu">
+                <li class="active"><a href="index.html">Overview</a></li>
+                <li><a href="individual-care.html">Individual Care</a></li>
+                <li><a href="residential-care.html">Residential Care</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="contact-info mb-4">
+            <h3>Contact us</h3>
+            <p>For more information, a product demo, or to subscribe to our service <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">contact us here</a></p>
+
+            <p>You can also send us an email here:
+                <a href="mailto:info@threadcare.com.au">info@threadcare.com.au</a>
+            </p>
+        </div>
+        <div class="social-link mb-4">
+            <a href="#" class="facebook-link">
+                <svg width="42" height="42">
+                <use href="#facebook" />
+            </svg></a>
+            <a href="#" class="twitter-link">
+                <svg width="42" height="42">
+                    <use href="#twitter" />
+                </svg>
+            </a>
+        </div>
+        <div class="download-btn">
+            <a href="#"><img src="img/google-play.svg" alt="Google play" height="48" width="162"/></a>
+            <a href="#"><img src="img/app-store.svg" alt="App Store"/ width="143" height="48"></a>
+        </div>
+    </div>
+</div>
+    <div class="main">
+        
+	
+
+    </div>
+
 </body>
 
 
@@ -381,4 +452,4 @@
 
 <script type="text/javascript" src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/jquery-3.6.1.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/app.min.j')}}"></script>
+<script type="text/javascript" src="{{asset('js/app.min.js')}}"></script>
