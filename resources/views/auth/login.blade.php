@@ -378,7 +378,7 @@
 
 </html>
 
-
+//Java Script connected
 <script type="text/javascript" src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/jquery-3.6.1.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/app.min.j')}}"></script>
