@@ -14,6 +14,7 @@
 
 <title>TMS</title>
 
+
 <meta name="title" content="TMS">
 
 </head>
@@ -33,6 +34,7 @@
 
     <div class="row justify-content-center">
         <div class="col-md-6 card p-3">
+            <!-- Form for  different Provience -->
             <form method="POST" action="{{ route('admin.register') }}">
              @csrf
                 <div class="mb-2">
@@ -42,7 +44,7 @@
                 <div class="mb-2">
                     <label for="province" class="form-label">Province</label>
                     <select name="province_id" id="">
-                        <option value="1">province 1</option>
+                        <option value="1">province 1</option>  
                         <option value="2">Province 2</option>
                         <option value="3">province 3</option>
                         <option value="4">Province 4</option>
