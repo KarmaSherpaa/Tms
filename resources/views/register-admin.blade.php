@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="{{asset('cssFile/styles.min.css')}}">
+ <!-- custom css -->
+<link rel="stylesheet" href="{{asset('cssFile/styles.min.css')}}"> 
 <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
 <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
 
