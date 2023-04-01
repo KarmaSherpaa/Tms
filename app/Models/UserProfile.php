@@ -9,10 +9,13 @@ class UserProfile extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['province_id'];
+    protected $fillable = ['province_id','user_id','phone'];
 
     public function user(){
         return $this->belongsTo(User::class);
+    }
+    public function province(){
+        return $this->hasOne(ProvinceInfo::class,'province_id','province_id');
     }
 
 }
