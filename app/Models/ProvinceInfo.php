@@ -9,7 +9,7 @@ class ProvinceInfo extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_id','province_id','province_name','phone'];
+    protected $fillable = ['province_id','province_name','phone'];
 
     public function user(){
         return $this->belongsTo(User::class);
@@ -18,6 +18,13 @@ class ProvinceInfo extends Model
     public function users(){
         return $this->hasManyThrough(UserProfile::class,User::class);
     }
+    public function profile(){
+
+        return $this->belongsTo(UserProfile::class,'province_id','province_id');
+    }
+
+
+
 
 
 }
