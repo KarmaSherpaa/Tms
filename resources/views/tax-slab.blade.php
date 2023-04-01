@@ -67,8 +67,9 @@
 
 </body>
 
-
 </html>
+
+
 
 
 <script type="text/javascript" src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
