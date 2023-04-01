@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('province_infos', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained('users');
+            $table->tinyInteger('province_id');
             $table->string('province_name',50);
             $table->string('phone');
             $table->timestamps();
