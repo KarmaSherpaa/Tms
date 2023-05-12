@@ -328,77 +328,11 @@
     </symbol>
 
 </svg>
-    <div class="sidebar">
-    <div class="sidebar-head">
-        <img src="img/logo.svg" alt="logo" class="logo d-none d-lg-block">
-        <a href="javascript:void(0);" class="sidebar-toggle menu-close d-none d-lg-block">
-            <svg width="18" height="18">
-                <use href="#icon-close" class="sidebar-close" />
-                <use href="#icon-open" class="sidebar-open" />
-            </svg>
-        </a>
-        <a href="javascript:void(0);" class="close-menu d-block d-lg-none float-end">
-            <svg width="18" height="18">
-                <use href="#icon-closex" class="menu-close" />
-            </svg>
-        </a>
-    </div>
-    <div class="sidebar-body">
-
-        <ul class="list-unstyled ps-0">
-
-            <li class="mb-1">
-                <a href="dashboard.html" class="d-inline-flex text-decoration-none rounded">Dashboard</a>
-            </li>
-            <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                    Admin
-                </button>
-                <div class="collapse" id="orders-collapse" style="">
-                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="register-admin.html" class="d-inline-flex text-decoration-none rounded">Register Admin</a></li>
-                        <li><a href="manage-admins.html" class="d-inline-flex text-decoration-none rounded">Manage Admins</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                    Users
-                </button>
-                <div class="collapse" id="account-collapse">
-                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="user-pan-list.html" class="d-inline-flex text-decoration-none rounded">PAN Verification</a></li>
-                        <li><a href="user-list.html" class="d-inline-flex text-decoration-none rounded">Tax Payer Records</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="mb-1">
-                <a href="tax-slab.html" class="d-inline-flex text-decoration-none rounded">Tax Slab</a>
-            </li>
-            <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#news-collapse" aria-expanded="false">
-                    News
-                </button>
-                <div class="collapse" id="news-collapse">
-                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="news.html" class="d-inline-flex text-decoration-none rounded">All News</a></li>
-                        <li><a href="edit-news.html" class="d-inline-flex text-decoration-none rounded">Add News</a></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="mb-1">
-                <a href="feedback.html" class="d-inline-flex text-decoration-none rounded">User Feedback</a>
-            </li>
-        </ul>
-    </div>
-</div>
-    <div class="main">
+    
+    <div class="8">
         <header class="header sticky-top">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg navbar-user">
+ <img src="img\white_logo.svg" alt="logo" class="logo d-none d-lg-block">
     <div class="container-fluid">
         <div class=" d-lg-none mobile-header">
             <a href="javascript:void(0);" class="menu-toggle">
@@ -407,32 +341,7 @@
                 </svg>
             </a>
         </div>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-            <div class="dropdown account-setting">
-                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <svg width="24" height="23">
-                        <use href="#icon-user" />
-                    </svg>
-                    <span class="username">Super Admin</span>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="profile-setting.html">Profile Settings</a></li>
-                    <li><a class="dropdown-item" href="login.html">Log out</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    
 </nav>
             
             
@@ -440,45 +349,74 @@
         <div class="inner">
             
 <div class="text-block">
-    <div class="text-center">
+    <h1>Personal Information</h1>
+   <form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label fw-bold">First Name</label>
+    <td><input class="form-control" type="text" placeholder="first name"</td>
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label fw-bold">Last Name</label>
+    <td><input class="form-control" type="text" placeholder="last name"</td>
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label fw-bold">Date of Birth(AD)</label>
+    <td><input class="form-control" type="text" placeholder="2002/01/12"</td>
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label fw-bold">Gender</label>
+    <td><input class="form-control" type="text" placeholder="male/female/others"</td>
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label fw-bold">Nationality</label>
+    <td><input class="form-control" type="text" placeholder="Nepalese"</td>
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label fw-bold">Status</label>
+    <td><input class="form-control" type="text" placeholder="married/unmarried"</td>
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label fw-bold">Phone Number</label>
+    <td><input class="form-control" type="text" placeholder="01234567895"</td>
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label fw-bold">E-mail</label>
+   <td><input class="form-control" type="text" placeholder="abc123@gmail.com"</td>
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label fw-bold">Grand father's Name</label>
+    <td><input class="form-control" type="text" placeholder="grandfather name"</td>
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label fw-bold">Father's Name</label>
+    <td><input class="form-control" type="text" placeholder="father name"</td>
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label fw-bold">Mother's Name</label>
+    <td><input class="form-control" type="text" placeholder="mother name"</td>
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label fw-bold">Spouse Name</label>
+    <td><input class="form-control" type="text" placeholder="spouse name"</td>
+  </div><div class="col-md-6">
+    <label for="inputEmail4" class="form-label fw-bold">Citizenship Number</label>
+    <td><input class="form-control" type="text" placeholder="220497948 "</td>
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label fw-bold">Citizenship Issue Date</label>
+     <td><input class="form-control" type="text" placeholder="2010/01/05 "</td>
+  </div>
+  <div class="mb-3">
+                        <label for="formFile" class="form-label">News Image</label>
+                        <input class="form-control" type="file" id="formFile">
+                      </div>
+    <div class="col-auto mt-1 mt-lg-0">
+    <a href="user_registerform2.html" class="btn btn-primary">Next</a>
+    
+</div>
+    </form>
 
-        <h1>Update Information</h1>
-    </div>
-
-    <div class="row justify-content-center">
-        <div class="col-md-6 card p-3">
-            <form>
-             
-                <div class="mb-2">
-                    <label for="username" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="username" placeholder="Username">
-                </div>
-                <div class="mb-2">
-                    <label for="province" class="form-label">Province</label>
-                    <input type="text" class="form-control" id="province" placeholder="Bagmati">
-                </div>
-                <div class="mb-2">
-                    <label for="phonenumber" class="form-label">Phone number</label>
-                    <input type="text" class="form-control" id="phonenumber" placeholder="9851011212">
-                </div>
-                <div class="mb-2">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email">
-                </div>
-                <div class="mb-2">
-                    <label for="password" class="form-label">Change Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
-                </div>
-                <div class="mb-2">
-                    <label for="confirm-password" class="form-label">Confirm Change Password</label>
-                    <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password">
-                </div>
-                <div class="mb-1 text-center">
-                    <button type="submit" class="btn btn-primary">Update Details</button>
-                </div>
-            </form>
-        </div>
-    </div>
+  
 </div>
 
         </div>

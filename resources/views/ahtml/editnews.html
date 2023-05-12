@@ -330,9 +330,9 @@
 </svg>
     <div class="sidebar">
     <div class="sidebar-head">
-        <img src="img/logo.svg" alt="logo" class="logo d-none d-lg-block">
+        <img src="img\white_logo.svg" alt="logo" class="logo d-none d-lg-block">
         <a href="javascript:void(0);" class="sidebar-toggle menu-close d-none d-lg-block">
-            <svg width="18" height="18">
+            <svg width="25" height="25">
                 <use href="#icon-close" class="sidebar-close" />
                 <use href="#icon-open" class="sidebar-open" />
             </svg>
@@ -410,13 +410,13 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    <a class="nav-link active fw-bold" aria-current="page" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link fw-bold" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link fw-bold" href="#">Contact</a>
                 </li>
             </ul>
             <div class="dropdown account-setting">
@@ -439,47 +439,37 @@
         </header>
         <div class="inner">
             
-<div class="text-block">
-    <div class="text-center">
-
-        <h1>Update Information</h1>
-    </div>
-
-    <div class="row justify-content-center">
-        <div class="col-md-6 card p-3">
-            <form>
-             
-                <div class="mb-2">
-                    <label for="username" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="username" placeholder="Username">
+<div class="project-block">
+<div class="text-block text-center">
+    <h1>Edit News</h1>
+</div>
+    <div class="project-item ">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <div class="mb-3">
+                        <label for="newstitle" class="form-label fw-bold">News Title</label>
+                        <input type="text" class="form-control" id="newstitle" placeholder="News Title">
+                      </div>
+                      <div class="mb-3">
+                        <label for="formFile" class="form-label fw-bold">News Image</label>
+                        <input class="form-control" type="file" id="formFile">
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label for="newstext" class="form-label fw-bold">News Content</label>
+                        <textarea class="form-control" id="newstext" rows="8"></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <button type="submit" class="btn btn-site fw-bold">Edit</button>
+                      </div>
                 </div>
-                <div class="mb-2">
-                    <label for="province" class="form-label">Province</label>
-                    <input type="text" class="form-control" id="province" placeholder="Bagmati">
-                </div>
-                <div class="mb-2">
-                    <label for="phonenumber" class="form-label">Phone number</label>
-                    <input type="text" class="form-control" id="phonenumber" placeholder="9851011212">
-                </div>
-                <div class="mb-2">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email">
-                </div>
-                <div class="mb-2">
-                    <label for="password" class="form-label">Change Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
-                </div>
-                <div class="mb-2">
-                    <label for="confirm-password" class="form-label">Confirm Change Password</label>
-                    <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password">
-                </div>
-                <div class="mb-1 text-center">
-                    <button type="submit" class="btn btn-primary">Update Details</button>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
+    
 </div>
+
 
         </div>
     </div>

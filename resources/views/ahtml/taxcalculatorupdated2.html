@@ -328,77 +328,11 @@
     </symbol>
 
 </svg>
-    <div class="sidebar">
-    <div class="sidebar-head">
-        <img src="img/logo.svg" alt="logo" class="logo d-none d-lg-block">
-        <a href="javascript:void(0);" class="sidebar-toggle menu-close d-none d-lg-block">
-            <svg width="18" height="18">
-                <use href="#icon-close" class="sidebar-close" />
-                <use href="#icon-open" class="sidebar-open" />
-            </svg>
-        </a>
-        <a href="javascript:void(0);" class="close-menu d-block d-lg-none float-end">
-            <svg width="18" height="18">
-                <use href="#icon-closex" class="menu-close" />
-            </svg>
-        </a>
-    </div>
-    <div class="sidebar-body">
-
-        <ul class="list-unstyled ps-0">
-
-            <li class="mb-1">
-                <a href="dashboard.html" class="d-inline-flex text-decoration-none rounded">Dashboard</a>
-            </li>
-            <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                    Admin
-                </button>
-                <div class="collapse" id="orders-collapse" style="">
-                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="register-admin.html" class="d-inline-flex text-decoration-none rounded">Register Admin</a></li>
-                        <li><a href="manage-admins.html" class="d-inline-flex text-decoration-none rounded">Manage Admins</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                    Users
-                </button>
-                <div class="collapse" id="account-collapse">
-                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="user-pan-list.html" class="d-inline-flex text-decoration-none rounded">PAN Verification</a></li>
-                        <li><a href="user-list.html" class="d-inline-flex text-decoration-none rounded">Tax Payer Records</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="mb-1">
-                <a href="tax-slab.html" class="d-inline-flex text-decoration-none rounded">Tax Slab</a>
-            </li>
-            <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#news-collapse" aria-expanded="false">
-                    News
-                </button>
-                <div class="collapse" id="news-collapse">
-                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="news.html" class="d-inline-flex text-decoration-none rounded">All News</a></li>
-                        <li><a href="edit-news.html" class="d-inline-flex text-decoration-none rounded">Add News</a></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="mb-1">
-                <a href="feedback.html" class="d-inline-flex text-decoration-none rounded">User Feedback</a>
-            </li>
-        </ul>
-    </div>
-</div>
-    <div class="main">
+    
+    <div class="8">
         <header class="header sticky-top">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg navbar-user">
+  <img src="img\white_logo.svg" alt="logo" class="logo d-none d-lg-block" height="70">
     <div class="container-fluid">
         <div class=" d-lg-none mobile-header">
             <a href="javascript:void(0);" class="menu-toggle">
@@ -407,82 +341,186 @@
                 </svg>
             </a>
         </div>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <div class="collapse navbar-collapse  ">
+            <ul class="navbar-nav mb-lg-0 mx-auto ">
+                <li class="nav-item ">
+                    <h5><a class="nav-link fw-bold text-white " aria-current="page" href="home.html">Home</a></h5>
+                </li> 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                     <h5><a class="nav-link fw-bold text-white" href="taxcalculator.html">Calculate Tax</a></h5>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                     <h5><a class="nav-link fw-bold text-white" href="#">View Details</a></h5>
+                </li>
+                  <li class="nav-item">
+                     <h5><a class="nav-link  fw-bold text-white" href="#">Tax Slab</a></h5>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                     <h5><a class="nav-link fw-bold text-white" href="#">About us</a></h5>
                 </li>
             </ul>
-            <div class="dropdown account-setting">
-                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="dropdown account-setting text-white">
+                <a class="dropdown-toggle text-white" href="#" role="button " data-bs-toggle="dropdown" aria-expanded="false">
                     <svg width="24" height="23">
                         <use href="#icon-user" />
                     </svg>
-                    <span class="username">Super Admin</span>
+                    <span class="username text-white">User</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="profile-setting.html">Profile Settings</a></li>
+                    <li><a class="dropdown-item" href="profile-setting.html">My Profile</a></li>
                     <li><a class="dropdown-item" href="login.html">Log out</a></li>
                 </ul>
             </div>
-        </div>
-    </div>
+    
 </nav>
             
             
         </header>
+      
         <div class="inner">
-            
-<div class="text-block">
-    <div class="text-center">
 
-        <h1>Update Information</h1>
-    </div>
+            <style>
+                .coll {
+                    padding-top: 1%;
+                    padding-right: 59%;
+                }
 
-    <div class="row justify-content-center">
-        <div class="col-md-6 card p-3">
-            <form>
-             
-                <div class="mb-2">
-                    <label for="username" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="username" placeholder="Username">
+                .col.col-md-4.justify-content-md-center {
+                    border: 2px solid #dbdfe3;
+                    padding: 20px;
+                }
+
+                #agebox:active {
+                    background-color: rgb(21, 18, 18);
+                    color: #f5f2f2;
+                }
+
+                ul.navbar-nav.me-auto.mb-2.mb-lg-0.mx-auto.px-10 {
+                    padding-right: 30%;
+                }
+
+                ul.navbar-nav.mx-auto.px-8 {
+                    padding-left: 40%;
+                }
+
+                ul.navbar-nav {
+                    padding-left: 20%;
+                }
+
+                ul.navbar-nav {
+                    padding-left: 20%;
+                }
+
+                div#agebox {
+                    text-align: center;
+                }
+
+                .text-end {
+                    padding-top: 10%;
+                    padding-right: 59%;
+                }
+
+                .row.mb-3 {
+                    padding-right: 50%;
+                }
+
+                .coll2 {
+                    padding-top: 5%;
+                }
+            </style>
+
+            <div class="container-fluid ">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                       
+                            <div class="text-block">
+
+                                <h1>Income Tax Calculator</h1>
+
+                                <a class="navbar-brand fw-bold text-black " href="#">Assesement Info</a> F.Y.2079-80
+
+
+
+                            </div>
+                            <select class="form-select mb-3" aria-label="Default select example">
+                                <option selected>Select Status</option>
+                                <option value="1">Married</option>
+                                <option value="0">Unmarried</option>
+                            </select>
+                            <div class="mb-2">
+                                <h5 for="monthly_salary" class="form-label fw-bold">Monthly Salary</h5>
+                                <input ="monthly_salary" class="form-control" type="text"
+                                    placeholder="monthly salary">
+                            </div>
+                            <div class="mb-2">
+                                <h5 for="inputEmail4" class="form-label fw-bold">Annual Salary</h5>
+                                <input class="form-control" type="text" placeholder="Annual Gross Salary">
+                            </div>
+                            <h5 class="mb-3">Deduction</h5>
+                            <div class="mb-2">
+                                <label for="epf_contribution" class="form-label fw-bold">EPF Contribution</label>
+                                <input class="form-control" type="text"
+                                    placeholder="EPF Contribution">
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="ssf_contribution" class="form-label fw-bold">SSF Contribution</label>
+                                <input class="form-control" type="text"
+                                    placeholder="SSF Contribution">
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="cit_contribution" class="form-label fw-bold">CIT Contribution</label>
+                                <input class="form-control" type="text"
+                                    placeholder="CIT Contribution">
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="life_insurance" class="form-label fw-bold">Life Insurance Premium</label>
+                                <input class="form-control" type="text"
+                                    placeholder="Life Insurance Premium">
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="health_insurance" class="form-label fw-bold">Health Insurance
+                                    Premium</label>
+                                <input class="form-control" type="text"
+                                    placeholder="Health Insurance Premium">
+                            </div>
+                            <div class="mb-2">
+                                <label for="house_insurance" class="form-label fw-bold">House Insurance
+                                    Premium</label>
+                                <input class="form-control" type="text"
+                                    placeholder="Health Insurance Premium">
+                            </div>
+                            <div class="mb-2">
+                                <label for="donation" class="form-label fw-bold">Donation</label>
+                                <input class="form-control" type="text"
+                                    placeholder="Health Insurance Premium">
+                            </div>
+                            <div class="mb-2">
+                                <label for="other_allowed_deduction" class="form-label fw-bold">Other Allowable
+                                    Deduction</label>
+                                <input  class="form-control" type="text"
+                                    placeholder="Health Insurance Premium">
+                            </div>
+                            <div class="mb-2">
+                                <label for="medical_expences" class="form-label fw-bold">Medical expences</label>
+                                <input  class="form-control" type="text"
+                                    placeholder="Health Insurance Premium">
+                            </div>
+
+
+                            <div>
+                                <button type="submit" class="btn btn-primary">Calculate</button>
+                                <button type="submit" class="btn btn-primary">Generate Report</button>
+                            </div>
+                       
+                    </div>
                 </div>
-                <div class="mb-2">
-                    <label for="province" class="form-label">Province</label>
-                    <input type="text" class="form-control" id="province" placeholder="Bagmati">
-                </div>
-                <div class="mb-2">
-                    <label for="phonenumber" class="form-label">Phone number</label>
-                    <input type="text" class="form-control" id="phonenumber" placeholder="9851011212">
-                </div>
-                <div class="mb-2">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email">
-                </div>
-                <div class="mb-2">
-                    <label for="password" class="form-label">Change Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
-                </div>
-                <div class="mb-2">
-                    <label for="confirm-password" class="form-label">Confirm Change Password</label>
-                    <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password">
-                </div>
-                <div class="mb-1 text-center">
-                    <button type="submit" class="btn btn-primary">Update Details</button>
-                </div>
-            </form>
+            </div>
         </div>
-    </div>
-</div>
 
-        </div>
-    </div>
 
 </body>
 
